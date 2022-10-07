@@ -16,7 +16,7 @@ export class DealService {
 
     async getDeals(userId: string) {
         const bookmarkDocument = await this.dealRepository.find({
-          userId,
+            userId,
         });
         return bookmarkDocument;
     }
